@@ -3,11 +3,10 @@
 }
 
 .hero-section {
-  background-color: #b1a792;
-  height: 80vh; 
+  background-color: #b1a792; 
+  height: 100vh;
   min-height: 500px;
 }
-
 
 .model-image {
   height: 95%;
