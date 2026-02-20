@@ -2,9 +2,10 @@ import { Component, inject, OnInit } from '@angular/core';
 import { NavBar } from "../../components/nav-bar/nav-bar";
 import { ProductsService } from '../../service/products-service';
 
+
 @Component({
   selector: 'app-item',
-  imports: [NavBar],
+  imports: [],
   templateUrl: './item.html',
   styleUrl: './item.css',
 })
