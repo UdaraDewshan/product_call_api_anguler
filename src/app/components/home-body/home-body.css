@@ -1,0 +1,45 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hero-section {
+  background-color: #b1a792;
+  height: 80vh; 
+  min-height: 500px;
+}
+
+
+.model-image {
+  height: 95%;
+  max-width: 40%;
+  object-fit: contain;
+  object-position: bottom left;
+  z-index: 5;
+}
+
+
+.detail-circle {
+  width: 320px;
+  height: 320px;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  z-index: 5;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 60vh;
+  }
+  .model-image {
+    max-width: 80%;
+    opacity: 0.5;
+    z-index: 1;
+  }
+}
