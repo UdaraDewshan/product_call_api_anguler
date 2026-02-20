@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, inject, OnInit } from '@angular/core';
 import { NavBar } from "../../components/nav-bar/nav-bar";
 import { ProductsService } from '../../service/products-service';
 
@@ -12,6 +12,7 @@ import { ProductsService } from '../../service/products-service';
 export class Item implements OnInit{
 
   private productServise = inject(ProductsService);
+  private cdr = inject(ChangeDetectorRef);
 
   productList: any[] = [];
 
@@ -20,6 +21,11 @@ export class Item implements OnInit{
       (data : any) =>{
         console.log(data.products);
         this.productList = data.products;
+
+        this.cdr.detectChanges();
+      },
+      (error) => {
+        console.error("not come data", error);
       }
     );
   }

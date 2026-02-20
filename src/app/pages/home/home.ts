@@ -7,7 +7,7 @@ import { Item } from "../item/item";
 
 @Component({
   selector: 'app-home',
-  imports: [HomeBody, NavBar, Footer, Item],
+  imports: [HomeBody, Item],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
